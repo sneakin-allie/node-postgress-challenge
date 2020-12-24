@@ -11,6 +11,8 @@ const db = knex({
 
 const app = express();
 
+app.set( 'db', db);
+
 /* Your code goes here */
 
 app.listen( PORT, () => {
