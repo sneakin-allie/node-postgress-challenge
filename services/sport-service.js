@@ -13,6 +13,10 @@ const SportsService = {
         .where({'id': sport_id})
         .delete()
     },
+    getSportsById(db, sport_id) {
+      return db('sport')
+        .where({'id': sport_id})
+    }
   }
   
   module.exports = {
